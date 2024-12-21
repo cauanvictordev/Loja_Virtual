@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rymo - Home</title>
+    <!--================== FAVICON ===================-->
+    <link rel="icon" href="assets/img/logoIcon.png" />
+    <!--================== CSS ===================-->
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="mainLayout.css" />
+
+    <!--================== LINK THUMBNAIL META TAGS ===================-->
+    <!-- MS Tile - for Microsoft apps-->
+    <meta
+      name="msapplication-TileImage"
+      content="https://raw.githubusercontent.com/Thiagoow/Rymo-EcommerceWebsite-ResponsiveWithBootstrap/master/assets/img/ThumbnailLinkImg.jpg"
+    />
+    <!-- fb & Whatsapp -->
+    <meta property="og:site_name" content="Rymo." />
+    <meta property="og:title" content="Os Melhores Preços do Ano" />
+    <meta
+      property="og:description"
+      content="Loja virtual fictícia de roupas, sapatos/tênis e acessórios."
+    />
+    <!-- IMG URL: -->
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/Thiagoow/Rymo-EcommerceWebsite-ResponsiveWithBootstrap/master/assets/img/ThumbnailLinkImg.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <!--  size up to 300px. Anything above this will not work in WhatsApp -->
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:url" content="https://rymo.netlify.app/" />
+
+    <!-- FontAwesome CDN: -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap stackPath CSS: -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Bootstrap Jquery and Js separate files:  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- NavBar: -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+      <div class="container">
+        <a href="index.html">
+          <img src="logo1.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><i id="bar" class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav_link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav_link" href="loja.html">Loja</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav_link" href="blog.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav_link" href="sobre_nos.html">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav_link" href="contato.html">Contato</a>
+            </li>
+    
+            <li class="nav-item">
+              <a href="carrinho.html">
+                <i class="fal fa-shopping-bag"></i>
+              </a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+     <!-- CARROSSEL -->
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="1CARROSEL.jpg" alt="Pizza 1" class="carousel-image">
+        <img src="carrosel2.jpg" alt="Pizza 2" class="carousel-image">
+        <img src="CARROSEL3.jpg" alt="Pizza 3" class="carousel-image">
+      </div>
+    </div>
+    
+
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+</head>
+<body>
+  <section class="container" id="brands">
+    <div class="row m-0 py-5">
+      <!-- Substituição das imagens por ícones com texto -->
+      <div class="col-lg-2 col-md-4 col-6 text-center">
+        <div class="brand-icon">
+          <i class="fas fa-tshirt"></i>
+          <span>Camisetas</span>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 text-center">
+        <div class="brand-icon">
+          <i class="fas fa-shopping-bag"></i>
+          <span>Bolsas</span>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 text-center">
+        <div class="brand-icon">
+          <i class="fas fa-hat-cowboy"></i>
+          <span>Chapéus</span>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 text-center">
+        <div class="brand-icon">
+          <i class="fas fa-shoe-prints"></i>
+          <span>Calçados</span>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 text-center">
+        <div class="brand-icon">
+          <i class="fas fa-socks"></i>
+          <span>Meias</span>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-6 text-center">
+        <div class="brand-icon">
+          <i class="fas fa-user-tie"></i>
+          <span>Acessórios</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <section class="w-100" id="categories">
+      <div class="row p-0 m-0">
+        <div class="one p-0 col-lg-4 col-md-12 col-12">
+          <img class="img-fluid" src="tenis_esportivo.jpg" alt="" />
+          <div class="details">
+            <h2>Tênis Esportivos</h2>
+            <button class="text-uppercase">VEJA AGORA</button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        
+        <div class="one p-0 col-lg-4 col-md-12 col-12">
+          <img class="img-fluid" src="Trajes_Sociais.jpg" alt="" />
+          <div class="details">
+            <h2>Trajes Sociais</h2>
+            <button class="text-uppercase">VEJA AGORA</button>
+          </div>
+        </div>
+
+        <div class="one p-0 col-lg-4 col-md-12 col-12">
+          <img class="img-fluid" src="Relógios_de_Pulso.jpg" alt="" />
+          <div class="details">
+            <h2>Relógios de Pulso</h2>
+            <button class="text-uppercase">VEJA AGORA</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Seção de Produtos -->
+<section class="my-5 pb-5" id="featured">
+  <div class="container text-center mt-5 py-5">
+    <h3>Mais Vendidos</h3>
+    <hr class="mx-auto">
+    <p>Aqui você pode ver os produtos mais vendidos da Rymo.</p>
+  </div>
+
+  <div class="row mx-auto container-fluid">
+    <!-- Produto 1 -->
+    <div class="product text-center col-lg-3 col-md-4 col-12" data-id="1">
+      <img class="img-fluid mb-3" src="Tênis_Esportivos.jpg" alt="Tênis Esportivos">
+      <h5 class="p-name">Tênis Esportivos</h5>
+      <h4 class="p-price">R$98,00</h4>
+      <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+    </div>
+
+    <!-- Produto 2 -->
+    <div class="product text-center col-lg-3 col-md-4 col-12" data-id="2">
+      <img class="img-fluid mb-3" src="Tênis Casuais.jpg" alt="Tênis Casuais">
+      <h5 class="p-name">Tênis Casuais</h5>
+      <h4 class="p-price">R$50,00</h4>
+      <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+    </div>
+
+    <!-- Produto 3 -->
+    <div class="product text-center col-lg-3 col-md-4 col-12" data-id="3">
+      <img class="img-fluid mb-3" src="Mochila Casual.jpg" alt="Mochila Casual">
+      <h5 class="p-name">Mochila Casual</h5>
+      <h4 class="p-price">R$79,80</h4>
+      <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+    </div>
+
+    <!-- Produto 4 -->
+    <div class="product text-center col-lg-3 col-md-4 col-12" data-id="4">
+      <img class="img-fluid mb-3" src="Gorros de Inverno.jpg" alt="Gorros de Inverno">
+      <h5 class="p-name">Gorros de Inverno</h5>
+      <h4 class="p-price">R$20,50</h4>
+      <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="my-5 py-5" id="parallaxBanner">
+      <div class="container">
+        <h4>Nova promoção de temporada</h4>
+        <h1>
+          Coleção de inverno com <br />
+          MAIS DE 20% OFF!
+        </h1>
+        <button class="text-uppercase btn-highlight">Compre Agora</button>
+      </div>
+    </section>
+    
+    
+    <section class="my-5" id="clothing">
+  <div class="container text-center mt-5 py-5">
+    <h3>Roupas</h3>
+    <hr class="mx-auto" />
+    <p>Confira a nova coleção de roupas disponíveis.</p>
+  </div>
+
+  <div class="row mx-auto container-fluid">
+    <!-- Produto 1 -->
+    <div class="product text-center col-lg-3 col-md-4 col-12" data-id="1">
+      <img class="img-fluid mb-3" src="Traje_Social_Listrado.jpg" alt="Traje Social Listrado" />
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Traje Social Listrado</h5>
+      <h4 class="p-price">R$150,00</h4>
+      <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+    </div>
+
+    <!-- Produto 2 -->
+    <div class="product text-center col-lg-3 col-md-4 col-12" data-id="2">
+      <img class="img-fluid mb-3" src="Vestido_Listrado.jpg" alt="Vestido Listrado" />
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Vestido Listrado</h5>
+      <h4 class="p-price">R$50,00</h4>
+      <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+    </div>
+
+    <!-- Produto 3 -->
+    <div class="product text-center col-lg-3 col-md-4 col-12" data-id="3">
+      <img class="img-fluid mb-3" src="Camiseta_Preta.jpg" alt="Camiseta Preta" />
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Camiseta Preta</h5>
+      <h4 class="p-price">R$25,00</h4>
+      <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+    </div>
+
+    <!-- Produto 4 -->
+    <div class="product text-center col-lg-3 col-md-4 col-12" data-id="4">
+      <img class="img-fluid mb-3" src="Camisa_Branca.jpg" alt="Camiseta Branca" />
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Camiseta Branca</h5>
+      <h4 class="p-price">R$24,50</h4>
+      <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+</section>
+
+    <section class="my-5" id="watches">
+      <div class="container text-center mt-5 py-5">
+        <h3>Relógios Masculinos</h3>
+        <!-- Linha pra separar o conteúdo: -->
+        <hr class="mx-auto" />
+        <p>
+          Aqui você pode conferir a nova coleção de relógios masculinos da Rymo.
+        </p>
+      </div>
+
+      <div class="row mx-auto container-fluid">
+        <!-- Produto 1 -->
+        <div class="product text-center col-lg-3 col-md-4 col-12" data-id="1">
+          <img class="img-fluid mb-3" src="preto_relogio.jpg" alt="Preto Executivo Couro" />
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Preto Executivo Couro</h5>
+          <h4 class="p-price">R$150,00</h4>
+          <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+    </div>
+  
+        <!-- Produto 2 -->
+        <div class="product text-center col-lg-3 col-md-4 col-12" data-id="2">
+          <img class="img-fluid mb-3" src="Preto Casual Couro.jpg" alt="Preto Casual Couro" />
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Preto Casual Couro</h5>
+          <h4 class="p-price">R$50,00</h4>
+          <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+          </div>
+  
+        <!-- Produto 3 -->
+        <div class="product text-center col-lg-3 col-md-4 col-12" data-id="3">
+          <img class="img-fluid mb-3" src="prata_relogio.jpg" alt="Prateado Casual Aço" />
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Prateado Casual Aço</h5>
+          <h4 class="p-price">R$25,00</h4>
+          <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+          </div>
+  
+        <!-- Produto 4 -->
+        <div class="product text-center col-lg-3 col-md-4 col-12" data-id="4">
+          <img class="img-fluid mb-3" src="dourado_e_preto_relogio.jpg" alt="Preto e Dourado Couro" />
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Preto e Dourado Couro</h5>
+          <h4 class="p-price">R$24,50</h4>
+          <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+    </section>
+
+     <!--
+    <section class="my-5 py-5" id="products">
+      <div class="container mt-5 py-5">
+        <h3 class="font-weight-bold">Nossos Calçados</h3>
+        <hr />
+        <p>Confira os nossos calçados casuais e executivos.</p>
+      </div>
+  
+      <div class="row mx-auto container-fluid">
+       
+        
+        <div class="product text-center col-lg-3 col-md-4 col-12" data-id="1">
+          <img class="img-fluid mb-3" src="assets/img/shoes/8.jpg" alt="Preto e Branco Casual" />
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Preto e Branco Casual</h5>
+          <h4 class="p-price">R$150,00</h4>
+          <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+    </div>
+  
+      
+    
+        <div class="product text-center col-lg-3 col-md-4 col-12" data-id="2">
+          <img class="img-fluid mb-3" src="assets/img/shoes/7.jpg" alt="Marrom Casual" />
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Marrom Casual</h5>
+          <h4 class="p-price">R$100,00</h4>
+          <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+        </div>
+
+      
+        
+        <div class="product text-center col-lg-3 col-md-4 col-12" data-id="3">
+          <img class="img-fluid mb-3" src="assets/img/shoes/6.jpg" alt="Marrom Escuro Executivo" />
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Marrom Escuro Executivo</h5>
+          <h4 class="p-price">R$175,00</h4>
+          <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+    </div>
+  
+    
+        <div class="product text-center col-lg-3 col-md-4 col-12" data-id="4">
+          <img class="img-fluid mb-3" src="assets/img/shoes/5.jpg" alt="Bege Casual" />
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Bege Casual</h5>
+          <h4 class="p-price">R$124,50</h4>
+          <button class="buy-btn text-uppercase">Adicionar ao Carrinho</button>
+          </div>
+      </div>
+    </section>
+
+  -->
+
+
+
+  
+
+  <div class="feedback-container">
+    <div class="title">Clients <span class="highlight">Feedback</span></div>
+    <img src="Ana Silva.jpg" alt="Cliente" class="photo" id="photo">
+    <h2 id="name">Ana <span class="highlight">Silva</span></h2>
+    <p class="text" id="position">Cliente Fiel</p>
+    <p class="text" id="feedback">&ldquo;A Rymo tem as melhores roupas! As peças são de altíssima qualidade, duram bastante e sempre sigo as tendências que eles lançam. Não troco por nada, recomendo muito a todos os meus amigos!&rdquo;</p>
+    <div class="quote">&ldquo;&rdquo;</div>
+</div>
+
+<script>
+    const feedbacks = [
+        { name: 'Carlos Santos', position: 'Empresário', feedback: 'A experiência de compra na Rymo é maravilhosa! Desde o atendimento até a entrega, tudo funciona perfeitamente. As roupas são estilosas e caem super bem para diversas ocasiões. Com certeza voltarei a comprar!', photo: 'Carlos Santos.jpg' },
+        { name: 'Mariana Costa', position: 'Influencer', feedback: 'Sempre que preciso de roupas novas e modernas, eu corro para a Rymo. A variedade é incrível, e eu sempre saio satisfeita. A coleção nova me impressionou demais, com peças que misturam conforto e elegância.', photo: 'Mariana Costa.jpg' },
+        { name: 'Fernando Lima', position: 'Designer', feedback: 'A Rymo é sinônimo de qualidade e sofisticação. Cada peça que compro me surpreende mais, tanto pelo design quanto pela durabilidade. Eles realmente sabem o que fazem, e por isso sou cliente há anos.', photo: 'Fernando Lima.jpg' },
+        { name: 'Juliana Pereira', position: 'Estilista', feedback: 'Se você busca moda e inovação, a Rymo é o lugar certo. As roupas são incríveis, feitas com muito cuidado nos detalhes e sempre acompanhando as tendências do mercado. Recomendo sem pensar duas vezes.', photo: 'Juliana Pereira.jpg' }
+    ];
+
+    let index = 0;
+    function updateFeedback() {
+        const feedback = feedbacks[index];
+        document.getElementById('name').innerHTML = `${feedback.name}`;
+        document.getElementById('position').innerHTML = `${feedback.position}`;
+        document.getElementById('feedback').innerHTML = `&ldquo;${feedback.feedback}&rdquo;`;
+        document.getElementById('photo').src = feedback.photo;
+        document.getElementById('photo').alt = feedback.name;
+        index = (index + 1) % feedbacks.length;
+    }
+
+    setInterval(updateFeedback, 10000);
+</script>
+
+
+
+
+
+
+
+    <!--
+
+    <footer class="mt-5 py-5">
+      <div class="row container mx-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <img src="assets/img/logo2.png" alt="" />
+          <p class="pt-3">
+            A <bMain>Rymo.</bMain> é uma loja on-line de roupas fictícia. Criada
+            por
+            <a href="https://github.com/Thiagoow" target="_blank"
+              >Thiago Silva Lopes</a
+            >
+            em 2021. Para treinar HTML, CSS, JS e Bootstrap. Você pode conferir
+            todo o código desse website nesse link:
+            <a
+              href="https://github.com/Thiagoow/Rymo-EcommerceWebsite-ResponsiveWithBootstrap"
+              target="_blank"
+              >Meu GitHub</a
+            >
+          </p>
+        </div>     -->
+
+
+
+
+
+
+
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <!-- Coluna do Logotipo e Texto -->
+              <div class="footer-about col-lg-3 col-md-6 col-12">
+                <img src="logo2.png" alt="Logo">
+                <p>
+                  A RYMO nasceu no coração do Brasil como uma pequena loja de roupas. Desde o início, nosso objetivo foi claro: oferecer peças de qualidade com estilo acessível para todos. Enfrentamos muitos desafios no caminho, mas a nossa paixão pela moda nos manteve firmes.
+                </p>
+              </div>
+        
+              <!-- Coluna de Links -->
+              <div class="footer-links col-lg-3 col-md-6 col-12">
+                <h5>Featured</h5>
+                <ul>
+                  <li><a href="#">Men</a></li>
+                  <li><a href="#">Women</a></li>
+                  <li><a href="#">Boys</a></li>
+                  <li><a href="#">Girls</a></li>
+                  <li><a href="#">New Arrivals</a></li>
+                  <li><a href="#">Shoes</a></li>
+                  <li><a href="#">Cloths</a></li>
+                </ul>
+              </div>
+        
+              <!-- Coluna de Contato -->
+              <div class="footer-contact col-lg-3 col-md-6 col-12">
+                <h5>Contact Us</h5>
+                <p><strong>ADDRESS</strong><br>123 Street Name, City, Us</p>
+                <p><strong>PHONE</strong><br>+91 7510393197</p>
+                <p><strong>EMAIL</strong><br>cauanbento619@gmail.com</p>
+              </div>
+        
+              <!-- Coluna do Instagram -->
+              <div class="footer-instagram col-lg-3 col-md-6 col-12">
+                <h5>Instagram</h5>
+                <div class="footer-images">
+                  <img src="insta1.jpg" alt="">
+                  <img src="insta2.jpg" alt="">
+                  <img src="insta3.jpg" alt="">
+                  <img src="insta4.jpg" alt="">
+                  <img src="insta5.jpg" alt="">
+                  <img src="insta6.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Copyright -->
+          <div class="copyright mt-5">
+            <div class="row container mx-auto mb-4">
+              <div class="col-lg-3 col-md-6 col-12">
+                <img src="forma_de_pagamento.png" alt="Métodos de Pagamento" />
+              </div>
+             <!-- Texto do Copyright -->
+            <p class="mb-0 text-center">
+              © 2025 Cauan Victor de Oliveira Bento. Todos os direitos reservados
+            </p>
+            <!-- Ícones Sociais -->
+            <div class="social-icons">
+              <a href="#" class="icon facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
+            </div>
+          </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+  <script src="loja.js"></script>
+
+        
+  <script src="script.js"></script>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback do Cliente</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1cb5e0, #000046);
+            font-family: 'Arial', sans-serif;
+        }
+        .feedback-container {
+            background-color: white;
+            width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        .title {
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #666;
+        }
+        .highlight {
+            color: #1cb5e0;
+            font-weight: bold;
+        }
+        .text {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px auto 10px;
+            border: 4px solid white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .quote {
+            font-size: 40px;
+            color: #1cb5e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="feedback-container">
+        <div class="title">Clients <span class="highlight">Feedback</span></div>
+        <img src="Ana Silva.jpg" alt="Cliente" class="photo" id="photo">
+        <h2 id="name">Ana <span class="highlight">Silva</span></h2>
+        <p class="text" id="position">Cliente Fiel</p>
+        <p class="text" id="feedback">&ldquo;A Rymo tem as melhores roupas! As peças são de altíssima qualidade, duram bastante e sempre sigo as tendências que eles lançam. Não troco por nada, recomendo muito a todos os meus amigos!&rdquo;</p>
+        <div class="quote">&ldquo;&rdquo;</div>
+    </div>
+
+    <script>
+        const feedbacks = [
+            { name: 'Carlos Santos', position: 'Empresário', feedback: 'A experiência de compra na Rymo é maravilhosa! Desde o atendimento até a entrega, tudo funciona perfeitamente. As roupas são estilosas e caem super bem para diversas ocasiões. Com certeza voltarei a comprar!', photo: 'Carlos Santos.jpg' },
+            { name: 'Mariana Costa', position: 'Influencer', feedback: 'Sempre que preciso de roupas novas e modernas, eu corro para a Rymo. A variedade é incrível, e eu sempre saio satisfeita. A coleção nova me impressionou demais, com peças que misturam conforto e elegância.', photo: 'Mariana Costa.jpg' },
+            { name: 'Fernando Lima', position: 'Designer', feedback: 'A Rymo é sinônimo de qualidade e sofisticação. Cada peça que compro me surpreende mais, tanto pelo design quanto pela durabilidade. Eles realmente sabem o que fazem, e por isso sou cliente há anos.', photo: 'Fernando Lima.jpg' },
+            { name: 'Juliana Pereira', position: 'Estilista', feedback: 'Se você busca moda e inovação, a Rymo é o lugar certo. As roupas são incríveis, feitas com muito cuidado nos detalhes e sempre acompanhando as tendências do mercado. Recomendo sem pensar duas vezes.', photo: 'Juliana Pereira.jpg' }
+        ];
+
+        let index = 0;
+        function updateFeedback() {
+            const feedback = feedbacks[index];
+            document.getElementById('name').innerHTML = `${feedback.name}`;
+            document.getElementById('position').innerHTML = `${feedback.position}`;
+            document.getElementById('feedback').innerHTML = `&ldquo;${feedback.feedback}&rdquo;`;
+            document.getElementById('photo').src = feedback.photo;
+            document.getElementById('photo').alt = feedback.name;
+            index = (index + 1) % feedbacks.length;
+        }
+
+        setInterval(updateFeedback, 10000);
+    </script>
+</body>
+</html>

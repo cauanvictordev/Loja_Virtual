@@ -1,0 +1,626 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --main-color-btn-hover: rgba(245, 178, 178, 2);
+  --stars-color: rgb(255, 183, 0);
+  --main-color: coral;
+}
+
+/* Tira a outline de qualquer elemento focado: */
+*:focus {
+  outline: none !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+bMain {
+  color: var(--main-color);
+}
+
+button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 0.5rem !important;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  background-color: #1d1d1d;
+  color: aliceblue;
+  padding: 13px 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #353535;
+}
+
+.navbar {
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-item a {
+  color: black;
+}
+
+.navbar-light .navbar-nav .nav_link {
+  padding: 0 20px;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3 ease;
+}
+
+.navbar-light .navbar-nav .nav_link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav_link.active,
+.navbar i.active,
+.nav-item .active {
+  color: var(--main-color);
+}
+
+.navbar i {
+  font-size: 1.2rem;
+  padding: 0 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+/* Estilização menu hambúrguer: */
+#bar {
+  font-size: 1.5rem;
+  padding: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+  color: black;
+}
+
+#bar:hover,
+#bar.active {
+  color: #fff;
+}
+
+/* Estilização na navBar mobile: */
+@media only screen and (max-width: 991px) {
+  body nav div button:hover,
+  body nav div button:focus {
+    background-color: black;
+  }
+
+  body nav div button:hover #bar,
+  body nav div button:focus #bar {
+    color: #fff;
+  }
+
+  #navbarSupportedContent ul {
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  /* Remove o espaçamento a mais dos links da navBar em
+  relação aos ícones de pesquisa e carrinho: */
+  #navbarSupportedContent ul li:nth-child(n) a {
+    padding: 10px 0;
+  }
+  /* Espaçamento entre os links da navBar mobile (menu hambúrguer): */
+  #navbarSupportedContent ul li:nth-child(n) {
+    padding: 5px;
+  }
+}
+.navbar-light .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+/* Barrinha pra separar o conteúdo: */
+hr {
+  width: 280px;
+  min-height: 4px;
+  background-color: var(--main-color);
+}
+
+/* Efeito do botão aparecendo de baixo */
+.buy-btn {
+  background: var(--main-color);
+  transform: translateY(20px);
+  opacity: 0;
+  border-radius: 0.3rem;
+  transition: 0.3s all;
+}
+.buy-btn {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.buy-btn:hover {
+  background-color: var(--main-color-btn-hover);
+}
+
+/* Espaçamento entre as estrelas */
+.stars {
+  padding: 10px 0;
+}
+
+.stars i {
+  font-size: 00.8rem;
+  color: var(--stars-color);
+}
+
+/* Estilização da nav de paginação: */
+#products > nav > ul > li.page-item.active > a {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+#products > nav > ul > li:nth-child(n):hover > a {
+  background-color: var(--main-color);
+  border-color: black;
+  color: white;
+  font-weight: 600;
+}
+.pagination a {
+  color: black;
+}
+
+/* Tira a estilização dos links dos botão de compra nos produtos: */
+.product a {
+  color: white;
+  text-decoration: none;
+}
+
+.product a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilização da caixa de seleção e input de produto: */
+select {
+  display: block;
+  padding: 5px 10px;
+}
+
+.singleProduct input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+
+
+
+:root {
+  --main-color-btn-hover: rgba(245, 178, 178, 2);
+  --stars-color: rgb(255, 183, 0);
+  --main-color: coral;
+  --text-color-dark: #1d1d1d;
+  --background-dark: #1d1d1d;
+  --background-light: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  background-color: var(--background-light);
+  color: var(--text-color-dark);
+}
+
+button {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: none;
+  text-transform: uppercase;
+  background-color: var(--background-dark);
+  color: var(--background-light);
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #353535;
+}
+
+.navbar {
+  font-size: 1rem; /* Responsivo */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-item a {
+  color: var(--text-color-dark);
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-item {
+    display: block;
+    text-align: center;
+  }
+  .navbar .nav-item a {
+    padding: 0.5rem 0;
+  }
+}
+
+hr {
+  width: 100%; /* Responsivo */
+  max-width: 280px;
+  height: 4px;
+  background-color: var(--main-color);
+  margin: 1rem auto;
+}
+
+/* Adicionando responsividade para caixas e fontes */
+select, .singleProduct input {
+  font-size: 1rem; /* Ajuste automático */
+  width: 100%; /* Ajusta ao espaço disponível */
+}
+
+.stars i {
+  font-size: 1rem;
+}
+
+.pagination a {
+  font-size: 1rem; /* Mantém a legibilidade em telas pequenas */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo Geral */
+footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Colunas Individuais */
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-instagram {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+/* Títulos das Seções */
+footer h5 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+/* Textos e Links */
+footer p,
+footer ul {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #f76a0c; /* Cor laranja ao passar o mouse */
+}
+
+/* Coluna do Logotipo */
+.footer-about img {
+  max-width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  line-height: 1.5;
+  color: #bbb;
+}
+
+/* Coluna do Instagram */
+.footer-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 10px;
+}
+
+.footer-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-images img:hover {
+  transform: scale(1.1);
+}
+
+/* Seção de Direitos Autorais */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+/* Ícones de Redes Sociais */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer-social a {
+  color: #ccc;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #f76a0c;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-contact {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Copyright Container */
+.copyright {
+  border-top: 1px solid #444;
+  padding: 20px 0;
+  background-color: #1a1a1a;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.copyright .container {
+  display: flex;
+  justify-content: space-between; /* Distribui o conteúdo horizontalmente */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Texto Copyright */
+.copyright p {
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+
+/* Métodos de Pagamento */
+.payment-methods img {
+  max-width: 60px;
+  margin-right: 10px;
+}
+
+/* Ícones Sociais */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #ccc;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Cores das Logos ao Hover */
+.social-icons a.facebook:hover {
+  color: #3b5998; /* Azul do Facebook */
+}
+
+.social-icons a.instagram:hover {
+  color: #e4405f; /* Rosa do Instagram */
+}
+
+.social-icons a.linkedin:hover {
+  color: #0077b5; /* Azul do LinkedIn */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade */
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .footer-one {
+    margin-bottom: 20px;
+  }
+
+  .copyright .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os elementos */
+  }
+
+  .copyright .col-lg-3,
+  .copyright .col-lg-4,
+  .copyright .col-lg-5 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .copyright a {
+    font-size: 16px; /* Reduz o tamanho dos ícones */
+  }
+}
+
+/* Responsividade para telas muito pequenas (máx. 480px) */
+@media (max-width: 480px) {
+  footer {
+    padding: 30px 10px; /* Reduz o padding geral */
+  }
+
+  footer h5 {
+    font-size: 1rem; /* Reduz o tamanho dos títulos */
+  }
+
+  footer .footer-one img {
+    width: 100%; /* Garante que as imagens ocupem toda a largura */
+  }
+
+  .copyright .row {
+    gap: 15px;
+  }
+
+  .copyright p {
+    font-size: 12px; /* Texto menor para telas pequenas */
+  }
+
+  .copyright a {
+    font-size: 14px; /* Ícones ligeiramente menores */
+  }
+}

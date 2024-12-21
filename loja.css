@@ -1,0 +1,77 @@
+/* Estilização do conteúdo da página loja: */
+.product {
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    object-fit: cover;
+    transition: 0.3s all;
+  }
+  
+  .product:hover img {
+    opacity: 0.7;
+  }
+  
+  /* Efeito do botão aparecendo de baixo */
+  .product .buy-btn {
+    background: var(--main-color);
+    transform: translateY(20px);
+    opacity: 0;
+    border-radius: 0.3rem;
+    transition: 0.3s all;
+  }
+  .product:hover .buy-btn {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+  .product .buy-btn:hover {
+    background-color: var(--main-color-btn-hover);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(20px); }
+    10%, 90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(20px); }
+}

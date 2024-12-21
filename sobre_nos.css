@@ -1,0 +1,236 @@
+/* Estilo geral */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+/* Gradiente no topo com estilo de onda */
+.header {
+  background: linear-gradient(to right, #0b2c4e, #174d80);
+  padding: 50px 20px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: url('preto_relogio.jpg') repeat-x;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+
+/* Seção principal */
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 130px 5%; /* Adicionado deslocamento de 30px para baixo */
+  background: #ffffff;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.main-content h2 {
+  color: #174d80;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Caixa circular maior com depoimento */
+.testimonial {
+  background-color: #f0f8ff;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  margin-right: 50px;
+  flex-shrink: 0;
+}
+
+.testimonial p {
+  font-style: italic;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #174d80;
+  font-size: 1.2rem;
+}
+
+/* Texto ao lado */
+.text-container {
+  flex: 1;
+}
+
+/* Onda na parte inferior */
+.footer-wave {
+  position: relative;
+  background: #ffffff;
+}
+
+.footer-wave::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: url('https://svgshare.com/i/14Ck.svg') repeat-x;
+  background-size: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    padding: 130px 5%; /* Adiciona 50px ao padding superior */
+    text-align: center; /* Centraliza o conteúdo */
+  }
+
+  .main-content h2 {
+    font-size: 2rem; /* Reduz o tamanho do título */
+    margin-top: 50px; /* Adiciona 50px extra acima */
+    margin-bottom: 50px; /* Adiciona 50px extra abaixo */
+  }
+
+  .main-content p {
+    font-size: 1rem; /* Reduz tamanho do texto */
+    margin-top: 50px; /* Adiciona 50px extra acima */
+    margin-bottom: 50px; /* Adiciona 50px extra abaixo */
+  }
+
+  .testimonial {
+    width: 280px;
+    height: 280px; /* Reduz tamanho do círculo */
+    margin: 50px 0 80px 0; /* Ajusta margem com 50px extra em baixo */
+  }
+
+  .testimonial p {
+    margin-top: 50px; /* Adiciona 50px extra acima */
+    margin-bottom: 50px; /* Adiciona 50px extra abaixo */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 80px 10px; /* Adiciona 50px ao padding superior */
+  }
+
+  .header::after {
+    height: 50px; /* Ajusta altura da onda */
+    bottom: -75px; /* Adiciona 50px à posição inferior */
+  }
+
+  .main-content {
+    padding: 110px 5%; /* Adiciona 50px ao padding superior */
+  }
+
+  .main-content h2 {
+    font-size: 1.8rem; /* Reduz o tamanho do título */
+    margin-top: 50px; /* Adiciona 50px extra acima */
+    margin-bottom: 50px; /* Adiciona 50px extra abaixo */
+  }
+
+  .main-content p {
+    font-size: 0.9rem; /* Reduz o texto */
+    margin-top: 50px; /* Adiciona 50px extra acima */
+    margin-bottom: 50px; /* Adiciona 50px extra abaixo */
+  }
+
+  .testimonial {
+    width: 250px;
+    height: 250px; /* Reduz ainda mais o tamanho do círculo */
+    margin-bottom: 80px; /* Ajusta espaço extra abaixo */
+  }
+
+  .testimonial p {
+    margin-top: 50px; /* Adiciona 50px extra acima */
+    margin-bottom: 50px; /* Adiciona 50px extra abaixo */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 70px 5%; /* Adiciona 50px ao padding superior */
+  }
+
+  .header::after {
+    height: 40px; /* Ajusta altura da onda */
+    bottom: -70px; /* Adiciona 50px à posição inferior */
+  }
+
+  .main-content {
+    padding: 90px 10px; /* Adiciona 50px ao padding superior */
+  }
+
+  .main-content h2 {
+    font-size: 1.5rem; /* Diminui o tamanho do título */
+    margin-top: 50px; /* Adiciona 50px extra acima */
+    margin-bottom: 50px; /* Adiciona 50px extra abaixo */
+  }
+
+  .main-content p {
+    font-size: 0.9rem; /* Reduz tamanho do texto */
+    margin-top: 50px; /* Adiciona 50px extra acima */
+    margin-bottom: 50px; /* Adiciona 50px extra abaixo */
+  }
+
+  .testimonial {
+    .testimonial {
+      width: 220px; /* Aumenta a largura da bola em 20px */
+      height: 220px; /* Aumenta a altura da bola em 20px */
+      margin-bottom: 80px; /* Ajusta espaço extra abaixo */
+    }
+  
+    .testimonial p {
+      font-size: 0.9rem; /* Reduz tamanho do texto */
+      padding: 10px; /* Ajusta o padding */
+      margin-top: 50px; /* Adiciona 50px extra acima */
+      margin-bottom: 50px; /* Adiciona 50px extra abaixo */
+    }
+
+  .footer-wave::before {
+    height: 40px; /* Ajusta altura da onda no rodapé */
+    top: -70px; /* Adiciona 50px à posição superior */
+  }
+}
+
+}

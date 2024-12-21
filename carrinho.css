@@ -1,0 +1,330 @@
+/* Estilização geral */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding-top: 120px; /* Espaçamento para compensar a altura da navbar fixa */
+
+}
+
+.container {
+  padding: 20px 50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Define uma largura máxima */
+  width: 100%; /* Garante que o conteúdo respeite os limites */
+}
+
+
+h3 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+
+
+
+
+/* Estilização da imagem do produto no carrinho */
+.cart-img {
+  width: 60px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+ /* Estilização da tabela */
+ table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+td {
+  background-color: #ffffff;
+}
+
+/* Estilização personalizada para colunas */
+td.product-name {
+  text-align: left;
+  padding-right: 70px;
+}
+
+td.product-price {
+  padding-right: 40px;
+}
+
+td.quantity {
+  padding-right: 30px;
+}
+
+td.item-total {
+  padding-right: 20px;
+}
+
+/* Estilização da imagem do produto no carrinho */
+.cart-img {
+  width: 60px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Botões de quantidade */
+.quantity-controls button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.quantity-controls button:hover {
+  background-color: #2980b9;
+}
+
+/* Botão de remover */
+td button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+td button:hover {
+  background-color: #c0392b;
+}
+
+/* Container principal */
+.container {
+  margin-top: 20px;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+.text-end {
+  text-align: right;
+}
+
+
+
+
+/* Estilização para detalhes do produto */
+.product-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-details .cart-img {
+  width: 50px;
+  height: auto;
+}
+
+.product-details .product-name {
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.empty-cart-message {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cart Bottom */
+#cart-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  margin-top: 50px; /* Margem inferior */
+}
+
+.coupon, .total {
+  background-color: #fafafa;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 48%;
+}
+
+.coupon input {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button.btn-primary {
+  background-color: #d5a44a;
+  color: #fff;
+  border-radius: 5px;
+}
+
+button.btn-success {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+button.btn-success:hover, button.btn-primary:hover {
+  opacity: 0.9;
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  #cart-bottom {
+    padding: 15px;
+  }
+
+  .coupon, 
+  .total {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .coupon input, 
+  .total input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .d-flex {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  button.btn-primary, 
+  button.btn-success, 
+  button.btn-secondary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  #cart-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .coupon, 
+  .total {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  #cart-bottom {
+    padding: 10px;
+  }
+
+  .coupon h5, 
+  .total h5 {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================
+Estilo da mensagem para sacola vazia 
+=======================================*/
+.cart-empty-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px 40px;
+  border: 2px solid #dc3545;
+  color: #dc3545;
+  font-size: 18px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+
+
+/* Responsividade da mensagem para sacola vazia */
+@media (max-width: 768px) {
+  .cart-empty-alert {
+    padding: 15px 30px;
+    font-size: 16px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-empty-alert {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 95%;
+  }
+}
